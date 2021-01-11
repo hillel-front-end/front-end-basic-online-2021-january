@@ -10,6 +10,7 @@
 * http://htmlbook.ru/html/sub
 * https://htmlacademy.ru/courses/301/run/14
 * http://htmlbook.ru/html/hr
+* https://github.com/hillel-front-end/specification
 
 # Практика
 
