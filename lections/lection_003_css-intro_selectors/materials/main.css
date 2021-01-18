@@ -1,0 +1,126 @@
+/* 
+
+selector {
+    property: value;
+    property1: value2;
+    ...
+    propertyn: valuen;
+}
+
+*/
+
+/* by type */
+
+/* p {
+    color: green;
+} */
+
+/* DRY -> bad */ 
+/* h2 {
+    color: green;
+} */
+
+/* good */
+
+/* p, h2, span {
+    color: green;
+} */
+
+/* by class . */
+
+/* .text-color {
+    color: mediumvioletred;
+} */
+
+/*
+span.text-color {
+    color: red;
+} */
+
+/* span#auth {
+    color: brown;
+} */
+
+/* by id #*/
+
+/* #auth {
+    color: brown;
+} */
+
+/* #auth, #auth-second {
+    color: brown;
+} */
+
+/* em {
+    color: red;
+} */
+
+/* .parent em {
+    color: blue;
+} */
+
+/* #parent em {
+    color: blue;
+} */
+
+/* Combine */
+
+/* div.block-1 {} */
+/* .block-1, .block-2, .block-3, h2 {} */
+
+
+ /* Universal selectors */
+
+/* * {
+    text-decoration: underline;
+} */
+
+/* Inheritance */
+/* .menu  li {
+    color: blue;
+    font-size: 30px;
+} */
+
+div.center {
+    /* text-align: left, center, right; */
+    text-align: center; 
+}
+
+.menu > li {
+    color: blue;
+    font-size: 30px;
+}
+
+.menu li li { 
+    color: blueviolet;
+}
+
+/* .menu li li li {
+    color: yellow;
+} */
+
+ul.dropdown-third li {
+    color: yellow;
+}
+
+/* .dropdown-third li{
+    color: blue;
+} */
+
+#gold {
+    /* color: aquamarine !important; <-- baD*/
+}
+
+
+/* Specificity */
+
+/*                    1(1000)| 1(100)| 1(10) |  1(1)   |
+                      | attr |   id  | class | tagName |
+.menu li li li        |      |       |       |         |
+.dropdown-third li 
+#auth .parent .block-1 ul li {}
+*/
+
+
+/* ----------------------------------------------------------- */
+
