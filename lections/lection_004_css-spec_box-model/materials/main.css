@@ -1,0 +1,128 @@
+/*  -------- border ---- */
+.box {
+    /* border-style: solid; */
+    /* border-style: dashed; */
+    /* border-style: dotted; */
+    /* border-width: 5px; */
+    /* border-color: red; */
+
+    /* border: width style color*/
+    border: 2px solid green;
+    /* border-left: 5px solid #000;
+    border-bottom: 5px solid rgb(17, 0, 255);
+    border-top: 5px solid rgb(214, 20, 20);
+    border-right: 5px solid rgb(62, 226, 71); */
+}
+
+
+/*  -------- border-radius ---- */
+
+.br-radius {
+    /* border-radius: 10px; */
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 10px; */
+    /* border-radius: 20%; */
+}
+
+/* ------- padding --------*/
+.child-box-1 {
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.child-box-2 {
+    border: 1px solid blue;
+    padding: 7px;
+}
+
+.child-box-3 {
+    border: 1px solid yellow;
+    padding: 3px;
+}
+
+.child-box-4 {
+    border: 1px solid brown;
+    padding: 6px;
+}
+
+.indent {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.inner-p {
+    /* padding: 10px; */
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px; */
+    /* padding: 10px 20px 10px 20px; */
+}
+
+
+/* ----- margin ----- */
+.outer-indent {
+    /* margin: 10px; */
+    /* margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; */
+    margin: 10px 10px 10px 10px;
+}
+
+.v-m {
+    margin-bottom: 10px;
+}
+
+
+/* width - height */
+
+.box {
+    /* width: 300px;
+    height: 300px; */
+    width: 50%;
+}
+
+.inline {
+    border: 1px solid red;
+    color: red;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav {
+    border: 1px solid red
+}
+
+/* ------------ centering --------- */
+.center {
+    margin: auto;
+}
+
+.box-2 {
+    height: 500px;
+    border: 1px solid blue;
+}
+
+/* display */
+
+* {
+    box-sizing: border-box;
+}
+
+.disp-elem {
+    border: 1px solid red;
+    /* display: block; */
+    /* display: inline; */
+    /* display: inline-block; */
+    /* display: none; */
+
+    display: inline-block;
+    
+    height: 200px;
+    padding-top: 34px;
+}
