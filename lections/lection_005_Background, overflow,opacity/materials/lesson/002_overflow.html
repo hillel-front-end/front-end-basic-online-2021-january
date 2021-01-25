@@ -1,0 +1,68 @@
+<!--
+    Свойство overflow управляет тем, как ведёт себя содержимое блочного элемента, если его размер превышает допустимую длину/ширину.
+    Обычно блок увеличивается в размерах при добавлении в него элементов, заключая в себе всех потомков.
+
+    Если высота/ширина указаны явно,тогда блок не может увеличиться, и содержимое «переполняет» блок.
+    Что может привести к выподания содержимого блока
+    Его отображение в этом случае задаётся свойством overflow.
+
+    Можно указать поведение блока при переполнении по ширине в overflow-x и высоте – в overflow-y.
+
+    Значения:
+        - visible;
+        - hidden;
+        - scroll;
+        - auto
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .chat {
+            width: 50%;
+            height: 300px;
+            border: 1px solid red;
+            margin: auto;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            /* overflow-y: scroll; */
+            /* overflow: auto; */
+        }
+
+        .chat-message {
+            width: 100%;
+            border: 1px solid black;
+            color: red;
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="chat">
+        
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+        <div class="chat-message">hello admin</div>
+    </div>
+
+</body>
+</html>

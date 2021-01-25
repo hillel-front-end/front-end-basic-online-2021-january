@@ -1,0 +1,40 @@
+/* --------------- background-color --------------*/
+.bgc-red {
+    background-color: red;
+}
+
+.bgc-black {
+    background-color: #000;
+}
+
+
+/* --------------- background-image --------------*/
+.text {
+    font-size: 40px;
+    text-align: center;
+}
+
+.bgc-img  {
+    background-image: url(../img/dog.jpg);
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-size: 200px 200px; */
+    /* background-size: 100%; */
+
+    /* background-position: 10px center; */
+
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+

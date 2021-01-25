@@ -1,0 +1,81 @@
+<!--
+    Определяет уровень прозрачности элемента веб-страницы.
+    При частичной или полной прозрачности через элемент проступает фоновый рисунок или другие элементы,
+    расположенные ниже полупрозрачного объекта.
+
+    Значения: 0.0 - 1.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opacity</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body  {
+            height: 100%;
+            margin: 0px;
+        }
+
+        .hidde-display {
+            display: none;
+        }
+
+        .hidden-opacity {
+            opacity: 0;
+        }
+
+        .box, .block {
+            height: 500px;
+            width: 500px;
+            background-color: red;
+            transition: all 2s;
+        }
+        
+        .block {
+            background-color: blue;
+            margin-top: 10px;
+        }
+
+        .wrapper  {
+            height: 100%;
+            width: 100%;
+            border: 1px solid red;
+            background-image: url(./img/small-img.jpg);
+            background-size: 100%;
+            background-position: center center;
+        }
+
+        .text-block {
+            color: #fff;
+            border: 1px solid #fff;
+            margin: 100px auto;
+            width: 50%; 
+            /* opacity: 0.5; */
+            background-color: rgba(0, 0, 0, .5);
+        }
+  
+    </style>
+</head>
+<body>
+
+<!-- 
+    <div class="box"></div>
+    <div class="block"></div> -->
+
+    <div class="wrapper">
+        <div class="text-block">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi velit recusandae, 
+            molestias neque voluptatibus dolorum, harum voluptatum rem vel ut, quo veniam 
+            exercitationem cupiditate fugit. Unde pariatur magnam reiciendis nobis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi velit recusandae, 
+            molestias neque voluptatibus dolorum, harum voluptatum rem vel ut, quo veniam 
+            exercitationem cupiditate fugit. Unde pariatur magnam reiciendis nobis?
+        </div>
+    </div>
+
+</body>
+</html>
