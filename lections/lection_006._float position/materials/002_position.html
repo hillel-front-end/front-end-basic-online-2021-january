@@ -1,0 +1,107 @@
+<!--
+    position - данное свойство позволяет сдвигать элемент со своего обычного места.
+
+    Значение: static, relative, absolute, fixed.
+
+    Для того, чтобы применить  позиционирование, необходимо указать элементу CSS-свойство position: [значение] и координаты left/right/top/bottom.
+
+
+        - static (Статическое позиционирование производится по умолчанию, 
+                 в том случае, если свойство position не указано).
+        - relative:
+                    Относительное позиционирование сдвигает элемент относительно его обычного положения.
+                    Остальные элементы, располагаются так, как будто этот элемент не сдвигался.
+        - absolute:
+                    Абсолютное позиционирование делает две вещи:
+                        1) Элемент исчезает с того места, где он должен быть и позиционируется заново.
+                            Остальные элементы, располагаются так, как будто этого элемента никогда не было.
+
+                        2)Координаты top/bottom/left/right для нового местоположения отсчитываются от
+                            ближайшего позиционированного родителя, т.е. родителя с позиционированием, 
+                            отличным от static.Если такого родителя нет – то относительно документа.
+
+          - fixed: Позиционирует объект точно так же, как absolute, но относительно окна браузера.
+                   Когда страницу прокручивают, фиксированный элемент остается на своем месте и
+                   не прокручивается вместе со страницей.
+
+-->
+
+<html>
+<head>
+    <title>Position</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            height: 6000px;
+        }
+        
+        .parent {
+            /* width: 50%; */
+            height: 500px;
+            background-color: black;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        .pos-static {
+            position: static;
+        }
+
+        .pos-relative {
+            position: relative;
+        }
+
+        .pos-abs {
+            position: absolute;
+            background-color: red;
+        }
+
+        .pos-fixed {
+            position: fixed; 
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .navigation {
+            width: 50%;
+            height: 500px;
+            margin: 0 auto;
+            border: 5px solid blue;
+        }
+
+        .navigation__item {
+            display: inline-block;
+            padding: 25px;
+            border: 1px solid red;
+            background-color: black;
+            margin-right: 10px;
+            color: white;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <div class="box pos-static">Position static</div> -->
+    <!-- <div class="box pos-relative">Position relative</div>
+    <div class="box pos-relative">Position relative</div> -->
+
+    <!-- <div class="parent">
+        <div class="box pos-abs">Positionv absolute</div>
+    </div> -->
+
+
+    <div class="navigation">
+        <span class="navigation__item">item-1</span>
+        <span class="navigation__item">item-2</span>
+        <span class="navigation__item">item-3</span>
+    </div>
+
+  
+</body>
+</html>

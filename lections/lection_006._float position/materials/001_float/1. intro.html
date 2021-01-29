@@ -1,0 +1,77 @@
+<!--
+    002_float - Один из инструментов для верстки макетов который пришел на смену табличной верстки.
+    Свойство float прижимает элемент к левому или правому краю родителя, а близлежащий текст обтекает элемент с других сторон.
+   
+    СSS Значения: float: [right, left, none(по умолчанию)].
+-->
+<!-- 
+    Элемент с float и со значением left или right превращается в блочный, 
+    к нему автоматически добавляется свойство display со значением block.
+    При этом ширина элемента равна его содержимому плюс значения свойств padding, и border. 
+    В этом отношении элемент ведёт себя как строчно-блочный. 
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Опробовать float:left, right</title>
+    <style>
+        .block, span {
+            /* width: 200px;
+            height: 200px; */
+            border: 1px solid salmon;
+            /* margin-right: 10px; */
+        }
+
+        .parent {
+            border: 1px solid red;
+        }
+
+        .f-left {
+            float: left;
+        }
+
+        .f-right {
+            float: right;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .wrapper-parent {
+            text-align: center;
+        }
+        
+        .child-wrapper {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="cat.jpg" alt="cart" align="right"> -->
+    <!-- <div class="block">1</div>
+    <div class="block">2</div> -->
+    
+    <!--  ------------- align left  ---------------->
+    <!-- <span class="f-left">span - 1</span>
+    <span class="f-left">span - 2</span>
+    <span class="f-left">span - 3</span> -->
+
+
+    <!--  ------------- align right  ---------------->
+        <!-- <span class="f-right">span - 1</span>
+    <span class="f-right">span - 2</span> -->
+
+
+    <!-- align center -->
+    <!-- <div class="wrapper-parent">
+        <div class="child-wrapper">
+            <div class="f-left block">1</div>
+            <div class="f-left block">2</div>
+            <div class="clearfix"></div>
+        </div>
+    </div> -->
+
+</body>
+</html>

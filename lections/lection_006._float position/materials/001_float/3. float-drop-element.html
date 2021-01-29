@@ -1,0 +1,74 @@
+<!-- 
+    *Обтекаемые элементы не участвуют в потоке документа, 
+     когда все элементы выстраиваются последовательно друг за другом согласно схеме документа. 
+     Из-за этого обтекаемые элементы не оказывают влияние на высоту блока, внутри которого они располагаются.
+
+    Решение(сlearfix):
+
+    Чтобы parent элемент получил высоту float элемента,
+    обычно вводят универсальный класс, к примеру, clearfix и вставляют пустой <div> с этим классом в конец parent блока.
+    Чтобы отменить действие обтекания, свойство clear надо добавлять к элементу, идущему после элемента с float.
+    
+    Для отмены действия float от вышестоящего элемента применяется свойство "clear" со следующими значениями:
+    left — отменяет действие значения left у float;
+    right — отменяет действие значения right у float;
+    both — одновременно отменяет действие значений left и right у float. Это значение рекомендуется устанавливать, 
+            когда требуется отменить обтекание элемента, но неизвестно точно с какой стороны.
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>float елемент не учавствует в потоке документа</title>
+        <style>
+            *{
+                font-size: 50px;
+            }
+
+            .parent {
+                border: 6px solid red;
+            }
+
+            .child{
+                width: 30%;
+                height: 200px;
+                border: 1px solid purple;
+                background-color: royalblue;
+            }
+
+            .not-float {
+                width:  500px;
+                height: 400px;
+                background-color: black;
+                border: 3px solid red;
+            }
+
+            .row {
+                float: left;
+            }
+
+            .clearfix {
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+         <!-- <div class="parent">
+        
+            <div class="not-float">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi harum eaque aliquid 
+                reprehenderit eveniet ipsa dicta iste aperiam quisquam, impedit magnam ut laborum molestiae 
+                rem labore ratione, nostrum animi distinctio.
+            </div>
+        </div> -->
+
+        <div class="parent">
+            <div class="child row">
+                <div class="child row"></div>
+                <div class="child row"></div>
+            </div>
+            <div class="child row"></div>
+            <div class="clearfix"></div>
+        </div>
+    </body>
+</html>
+<!--NOTE:float-element вырван из потока -->
