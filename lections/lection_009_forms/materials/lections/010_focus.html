@@ -1,0 +1,66 @@
+<!--
+    Псевдокласс :focus определяет стиль для элемента, получающего фокус. Например, им может быть текстовое поле формы, в которое устанавливается курсор.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Focus</title>
+    <style>
+        [type="text"] {
+            outline: none;
+            border: 1px solid black;
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+        
+       input[type="text"]:focus {
+           color: red;
+           border: 1px solid red;
+       }
+
+       .tooltip {
+           border: 1px solid black;
+           display: inline-block;
+           padding: 5px;
+           border-radius: 10px;
+           background-color: #eee;
+           opacity: 0;
+           color: red;
+
+           transition: all 1s;
+       }
+
+       input[type="text"]:focus ~ .tooltip {
+            opacity: 1;
+       }
+
+       .tooltip-coords {
+           position: absolute;
+           left: calc(100% + 5px);
+           top: 50%;
+           transform:translateY(-50%);
+           white-space: nowrap;
+       }
+
+       .login-wrapper {
+           /* border: 1px solid black; */
+           position: relative;
+           display: inline-block;
+       }
+
+    </style>
+</head>
+<body>
+
+    <div class="login-wrapper">
+        <label for="login">Login</label>
+        <input type="text" value="Login" id="login">
+        <div class="tooltip tooltip-coords">Input login</div>
+    </div>
+    <input type="number" value="12321" id="login">
+
+
+   
+</body>
+</html>

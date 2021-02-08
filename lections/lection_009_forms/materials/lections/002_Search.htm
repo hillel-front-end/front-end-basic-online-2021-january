@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>search - поле для поиска</title>
+</head>
+<body>
+    <form>
+        <!--
+            Тег <label> устанавливает связь между определенной меткой, в качестве которой обычно выступает текст, 
+            и элементом формы (<input>, <select>, <textarea>)
+            .Такая связь необходима, чтобы изменять значения элементов формы при нажатии курсором мыши на текст.
+            Существует два способа связывания lable и input.
+             - Первый заключается в использовании идентификатора id внутри элемента формы и указании его имени
+               в качестве атрибута for тега <label>.
+             - При втором способе элемент формы помещается внутрь контейнера <label>.
+        -->
+        <p>
+            <label for="search">
+                Найти
+            </label>
+
+            <input id="search" type="search" />
+
+            <br/>
+            <br/>
+
+            <label>
+                Найти 2
+                <input  type="text"/>
+            </label>
+            <br>
+            <label for="check">Checkbox</label>
+            <input type="checkbox" name="" id="check">
+        </p>
+        <button>Отправить </button>
+
+    </form>
+</body>
+</html>

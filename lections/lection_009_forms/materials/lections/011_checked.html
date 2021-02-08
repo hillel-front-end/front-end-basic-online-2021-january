@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            transition: all 1s;
+        }
+
+
+        .button {
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 10px;
+            color: red;
+            background-color: black;
+        }
+    
+        .modal {
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: rgba(0, 0, 0, .5);    
+            z-index: -1;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+
+        .modal-content {
+            width: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 300px;
+            background-color: #fff;
+            transform: translate(-50%, -50%);
+        }
+        
+        p:hover {
+            color: blue; 
+        }
+
+        .modal__header {
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        #checkbox {
+            display: none;
+        }
+
+        #checkbox:checked ~ .libs .modal {
+            opacity: 1;
+            z-index: 3;
+        }
+
+        .close {
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            color: red;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .modal-backdrop {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 4;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <label for="checkbox" class="button">show</label>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox" class="button"> hidden</label>
+
+    <div class="box"></div> -->
+    <input type="checkbox" id="checkbox">
+
+    <label for="checkbox" class="button">show modal</label>   
+
+    <h1>Maiun Page</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi voluptatibus voluptate 
+        id assumenda quis. Excepturi harum dolore repudiandae, ratione nemo doloribus debitis 
+        repellat unde, minus architecto dolor cumque tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi voluptatibus voluptate 
+        id assumenda quis. Excepturi harum dolore repudiandae, ratione nemo doloribus debitis 
+        repellat unde, minus architecto dolor cumque tenetur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi voluptatibus voluptate 
+        id assumenda quis. Excepturi harum dolore repudiandae, ratione nemo doloribus debitis 
+        repellat unde, minus architecto dolor cumque tenetur.
+    </p>
+
+
+    <div class="libs">
+        <div class="modal hidden">
+            <div class="modal-content">
+                <label for="checkbox" class="close">x</label>
+                <div class="modal__header">Modal Window</div>
+                <div class="modal__body"></div>
+                <div class="modal__footer"></div>
+            </div>
+            <label for="checkbox" class="modal-backdrop"></label>
+        </div>
+    </div>
+</body>
+</html>
