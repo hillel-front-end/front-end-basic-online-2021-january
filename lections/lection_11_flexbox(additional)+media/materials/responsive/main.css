@@ -1,0 +1,42 @@
+.container {
+    width: 90%;
+    border: 1px solid red;
+    display: flex;
+    margin: auto;
+}
+
+
+.block {
+    border: 1px solid black;
+    width: 25%;
+    height: 300px;
+    background-color: red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .block {
+        width: 50%;
+        background-color: yellow;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .block {
+        width: 100%;
+        background-color:purple;
+    }
+}
