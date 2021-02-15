@@ -1,7 +1,7 @@
 # Домашняя работа
 
 Читаем информационные ресурсы:
-  * [flexbox basic + grow + shrink](https://www.youtube.com/watch?v=It3gkQa0YTw&t=969s)
+  * [flexbox basic + grow + shrink](https://www.youtube.com/watch?v=It3gkQa0YTw)
   * [viewport](http://frontender.com.ua/mobile-web/wtf-viewport/)
   * [Самые простые техники адаптивной верстки](https://habr.com/ru/post/144003/)
   * [media] https://itchief.ru/lessons/html-and-css/css-media-queries
