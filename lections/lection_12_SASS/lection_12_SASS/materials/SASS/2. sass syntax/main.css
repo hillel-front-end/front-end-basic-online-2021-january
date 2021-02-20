@@ -1,0 +1,9 @@
+.menu {
+  width: 100px;
+  display: flex; }
+  .menu li {
+    color: red; }
+    .menu li span {
+      display: inline-block; }
+
+/*# sourceMappingURL=main.css.map */

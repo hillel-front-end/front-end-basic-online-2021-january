@@ -1,0 +1,41 @@
+/*
+
+*/
+
+$color: red;
+
+@mixin flex($display, $fd, $jc, $ai) {
+    display: $display;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    
+}
+
+.button {
+    border: 1px solid $color;
+    color: $color;
+    background-color: blue;//(1)
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+
+    @include flex(inline-flex, row, center, center);
+
+    // transition-property: background-color;
+    // transition-duration: 1s;
+    // transition-timing-function: ease-in;
+    // transition-delay: .5s;
+
+    // transition: background-color 1s ease-in .5s;
+    transition: all .5s linear;
+    // transition: background-color  .5s linear, width 5s ease-in;
+
+    &:hover {
+       background-color: black;//(2)
+       width: 200px;
+       top: 50%;
+    }
+}

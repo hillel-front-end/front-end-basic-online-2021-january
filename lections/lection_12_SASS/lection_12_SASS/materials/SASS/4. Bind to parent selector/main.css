@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: black;
+  color: white; }
+  .button .icon:hover {
+    background-color: purple; }
+  .button:hover {
+    background-color: purple; }
+  .button:after {
+    content: '/aa23';
+    position: absolute;
+    left: 100%;
+    top: 50%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,35 @@
+//@mixin mixin_name() {}
+$color: red;
+
+@mixin centering() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex($fd, $jc, $ai) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+
+.header {
+    background-color:blue;
+    color: white;
+    @include flex(column, flex-start, flex-end);
+    &:hover {
+        color: blue;
+    }
+}
+
+.footer {
+    background-color: black;
+    color: red;
+    @include flex(column, center, center);
+}
+
+.button {
+    @include centering();
+}

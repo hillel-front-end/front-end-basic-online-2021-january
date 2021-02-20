@@ -1,0 +1,19 @@
+.main .container {
+  width: 50%;
+  margin: 0 auto;
+  color: pink;
+  border: 1px solid pink;
+}
+.main .post {
+  text-align: center;
+  color: pink;
+  border: 1px solid pink;
+}
+.main .title {
+  font-weight: bolder;
+  font-size: 30px;
+  color: black;
+  background-color: pink;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,36 @@
+.button {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    .icon {
+        &:hover {
+            background-color: purple;
+        }
+    }
+
+    &:hover {
+        background-color: purple;
+    }
+    
+    &:after {
+        content: '/aa23';
+        position: absolute;
+        left: 100%;
+        top: 50%;
+    }
+}
+
+// .button:hover {
+//     background-color: purple;
+// }
+
+// .button:after {
+//     content: '/aa23';
+//     position: absolute;
+//     left: 100%;
+//     top: 50%;
+// }

@@ -1,0 +1,12 @@
+
+.menu {
+    width: 100px;
+    display: flex;
+
+    li {
+        color: red;
+        span {
+            display: inline-block;
+        }
+    }
+}
