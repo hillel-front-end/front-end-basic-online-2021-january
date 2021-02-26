@@ -1,0 +1,19 @@
+.header {
+    @include flex(flex-start, flex-start);
+    background-color: black;
+
+    &__logo {
+        padding: 10px;
+        background-color: red;
+    }
+
+    &__navigation {
+        margin-left: auto;
+        width: 200px;
+    }
+
+
+    @media (max-width: 767px) {
+        //resp code
+    }
+}

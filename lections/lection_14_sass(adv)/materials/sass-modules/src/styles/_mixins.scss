@@ -1,0 +1,4 @@
+@mixin flex($fd, $jc) {
+    display: flex;
+    justify-content: $jc;
+}

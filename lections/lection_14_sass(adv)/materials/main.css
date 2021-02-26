@@ -1,0 +1,66 @@
+/*
+    @import
+    @mixins + @content
+    maps, array
+    @for, @each
+*/
+.navigation {
+  color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 33%;
+  height: 300px;
+}
+
+.gallery-item--red {
+  background-color: red;
+}
+
+.gallery-item--blue {
+  background-color: blue;
+}
+
+.gallery-item--green {
+  background-color: green;
+}
+
+.gallery-item--brown {
+  background-color: brown;
+}
+
+.gallery-item--black {
+  background-color: black;
+}
+
+.gallery-item--white {
+  background-color: white;
+}
+
+/*
+$foo: (
+    key: value,
+    key: value,
+    key: value
+)
+
+*/
+@media (max-width: 767px) {
+  .table {
+    width: 50%;
+  }
+}
+@media (max-width: 420px) {
+  .table {
+    width: 100%;
+  }
+}
+
+.icon--facebook {
+  background-image: "https://image.shutterstock.com/shutterstock/photos/593204357/display_1500/stock-photo--valencia-spain-march-facebook-logo-sign-on-white-background-printed-on-paper-593204357.jpg";
+}
+
+/*# sourceMappingURL=main.css.map */

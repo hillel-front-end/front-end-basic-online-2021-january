@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  background-color: black;
+}
+.header__logo {
+  padding: 10px;
+  background-color: red;
+}
+.header__navigation {
+  margin-left: auto;
+  width: 200px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    display: block;
+  }
+}
+
+.content {
+  display: flex;
+  background-color: green;
+}
+
+.footer {
+  display: flex;
+  background-color: black;
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=index.css.map */

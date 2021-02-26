@@ -1,0 +1,9 @@
+.footer {
+    display: flex;
+    background-color: black;
+
+    &__logo {
+        @include flex(flex-start, center);
+        background-color: blue;
+    }
+}

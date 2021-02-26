@@ -1,0 +1,118 @@
+/*
+    @import
+    @mixins + @content
+    maps, array
+    @for, @each
+*/
+
+
+// @if - @if-else - else
+
+$season: spring; // spring or  winter
+$corporate-color: green;
+
+// =
+// == 
+
+@if $season == winter {
+    $corporate-color: blue;
+} @else {
+    $corporate-color: yellow;
+}
+
+
+.navigation {
+    color: $corporate-color; 
+    display: flex;
+
+    @if $season == winter {
+        flex-direction: column;
+        justify-content: flex-end;
+    } @else {
+        flex-direction: row;    
+        justify-content: center;
+    }
+}
+
+
+// ========== loop ========
+
+.gallery-item {
+    width: 33%;
+    height: 300px;
+}
+
+
+// .gallery-item--red {
+//     background-color: red;
+// }
+
+// .gallery-item--blue {
+//     background-color: blue;
+// }
+
+
+$colors: red, blue, green, brown, black, white;
+
+
+@each $color in $colors {
+    .gallery-item--#{$color} {
+        background-color: $color;
+    }
+}
+
+
+
+/*
+$foo: (
+    key: value,
+    key: value,
+    key: value
+)
+
+*/
+
+// $breakpoints: 1100px, 767px, 420px;
+
+$breakpoints: ( // map
+    pc: 1100px,
+    table: 767px,
+    mobile: 420px
+);
+
+//map-get(map)
+
+//map-get($breakpoints, pc) ==> 1100px
+//map-get($breakpoints, table) ==>  767px
+//map-get($breakpoints, mobile) ==>   420px
+
+
+.table {
+    @media(max-width: map-get($breakpoints, table)) {
+        width: 50%;
+    }
+
+    @media(max-width: map-get($breakpoints, mobile)) {
+        width: 100%;
+    }
+}
+
+
+$images: (
+    google   : 'https://images.wallpaperscraft.ru/image/lestnitsa_stupenki_neon_198917_1920x1080.jpg',
+    horse    : 'https://avatarko.ru/img/kartinka/11/zhivotnye_ogon_loshad_10880.jpg',
+    facebook : 'https://image.shutterstock.com/shutterstock/photos/593204357/display_1500/stock-photo--valencia-spain-march-facebook-logo-sign-on-white-background-printed-on-paper-593204357.jpg'
+);
+
+// $people: ()
+
+// @each $key, $value in $images {
+//     .icon-#{$key} {
+//         background-image: url($value);
+//     }
+// }
+
+
+.icon--facebook {
+    background-image: map-get($images, facebook);
+}
