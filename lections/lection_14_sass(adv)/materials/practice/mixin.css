@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 767px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    width: 440px;
+    background-color: red;
+  }
+}
+
+/*# sourceMappingURL=mixin.css.map */

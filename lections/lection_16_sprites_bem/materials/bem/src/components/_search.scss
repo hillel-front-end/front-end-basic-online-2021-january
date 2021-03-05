@@ -1,0 +1,9 @@
+.search {
+    display: flex;
+
+    & &__button {
+        width: 200px;
+        margin-left: 10px;
+        background-color: blue;
+    }
+}

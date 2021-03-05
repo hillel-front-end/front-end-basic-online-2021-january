@@ -104,9 +104,21 @@ $images: (
     facebook : 'https://image.shutterstock.com/shutterstock/photos/593204357/display_1500/stock-photo--valencia-spain-march-facebook-logo-sign-on-white-background-printed-on-paper-593204357.jpg'
 );
 
+// $box: (
+//     foo: 'red',
+//     width: 200px,
+//     height: 200px,
+//     selector: box
+// );
+
+
+// #{get-map($box, selector)} {
+//     color: blue;
+// }
+
 // $people: ()
 
-// @each $key, $value in $images {
+// @each $key, $value in $social {
 //     .icon-#{$key} {
 //         background-image: url($value);
 //     }

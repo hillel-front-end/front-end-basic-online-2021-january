@@ -1,0 +1,76 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+.wrapper__header {
+  margin-bottom: 30px; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 5px;
+  color: white; }
+  .header__logo {
+    width: 25%;
+    height: 100px;
+    margin-right: 10px; }
+
+.logo {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .logo__picture {
+    display: block;
+    border-radius: 30px;
+    color: white;
+    font-size: 30px; }
+
+.nav__list {
+  display: flex; }
+.nav__item {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid blue; }
+
+.search {
+  display: flex; }
+  .search .search__button {
+    width: 200px;
+    margin-left: 10px;
+    background-color: blue; }
+
+.button {
+  display: block;
+  background-color: greenyellow;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center; }
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  .main__aside {
+    width: 35%;
+    height: 500px;
+    border: 1px solid blue; }
+  .main__content {
+    width: 60%;
+    height: 500px;
+    border: 1px solid blue; }
+  .main__button-call {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 300px; }
+  .main__logo {
+    width: 100px;
+    height: 200px;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__aside {
+        width: 35%;
+        height: 500px;
+        
+        border: 1px solid blue;
+    }
+
+    &__content {
+        width: 60%;
+        height: 500px;
+
+        border: 1px solid blue;
+    }
+
+    &__button-call {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: 300px;
+    }
+
+    &__logo {
+        width: 100px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+}

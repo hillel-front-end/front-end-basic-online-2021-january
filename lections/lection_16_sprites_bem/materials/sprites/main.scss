@@ -1,0 +1,42 @@
+.sprite {
+    width: 84px;
+    height: 84px;
+    
+    background-image: url(./sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -84px;
+
+
+    transition: all .5s linear;  
+
+    // &:nth-child(1) {
+    //     background-position-x: 0px;
+    // }
+
+    // &:nth-child(2) {
+    //     background-position-x: -84px;
+    // }
+
+    // &:nth-child(3) {
+    //     background-position-x: -168px;
+    // }
+
+    // &:nth-child(4) {
+    //     background-position-x: -252px;
+    // }
+
+    $start: 1;
+    $finish: 5;
+
+    @for $i from $start through $finish { 
+        &:nth-child(#{$i + 1}) {
+            background-position-x: -84px *  $i ;
+        }
+    }
+
+    &:hover {
+        background-position-y: 0px;
+    } 
+
+
+}

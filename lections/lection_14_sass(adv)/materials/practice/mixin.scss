@@ -1,0 +1,34 @@
+
+// breakpoint == 768px
+// map-get($breakpoints, $platform) =>900px
+
+@mixin flex($fd, $jc) {
+    display: flex;
+    justify-content: $jc;
+}
+
+$breakpoints: (
+    desktop: 1200px,
+    laptop: 1100px,
+    tablet: 900px,
+    mobile: 450px 
+);
+
+@mixin media($platform) {
+    @media screen and (max-width: map-get($breakpoints, $platform)) {
+        @content;
+    }
+}
+
+.container {
+    @include flex(flex-start, center);
+
+    @include media(tablet) {
+        width: 767px;
+    }
+
+    @include media(mobile) {
+        width: 440px; 
+        background-color:red;
+    }
+}

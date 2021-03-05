@@ -1,0 +1,28 @@
+.sprite {
+  width: 84px;
+  height: 84px;
+  background-image: url(./sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 -84px;
+  transition: all .5s linear;
+}
+.sprite:nth-child(2) {
+  background-position-x: -84px;
+}
+.sprite:nth-child(3) {
+  background-position-x: -168px;
+}
+.sprite:nth-child(4) {
+  background-position-x: -252px;
+}
+.sprite:nth-child(5) {
+  background-position-x: -336px;
+}
+.sprite:nth-child(6) {
+  background-position-x: -420px;
+}
+.sprite:hover {
+  background-position-y: 0px;
+}
+
+/*# sourceMappingURL=main.css.map */
