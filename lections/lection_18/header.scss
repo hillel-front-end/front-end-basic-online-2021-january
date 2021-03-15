@@ -1,0 +1,15 @@
+// http://htmlbook.ru/css/max-width
+// text-overflow
+
+.header {
+    height: 100px;
+    border: 1px solid black;
+
+    &__logo {
+        display: block;
+        width: 100px;
+        height: 200px;
+        background-color: red;
+        margin: 0 auto;
+    }
+}
