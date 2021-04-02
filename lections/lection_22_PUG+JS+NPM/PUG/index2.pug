@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="main.css")
+    body 
+        article(class="users")
+            -for(i = 0, size = teams.length; i < size; i++)
+                -if(teams[i].discharged)
+                    section(class="user")
+                        div(class="user__avatar") #{teams[i].img}
+                        div(class="user__info")
+                            span(class="user__name") #{teams[i].name}
+                            span(class="user__lastName") #{teams[i].lastName}
+                            div(class="user__description") #{teams[i].description}
+                -else
+                    div(class="user discharged") Сотрудник #{teams[i].name} уволен
